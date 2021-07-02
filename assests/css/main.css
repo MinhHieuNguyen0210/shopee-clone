@@ -828,6 +828,7 @@
   padding: 8px 16px;
   list-style: none;
   display: none;
+  z-index: 1;
 }
 .select-input__item {
 }
