@@ -1,0 +1,133 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+  --primary-color: #fb5630;
+  --boder-color: #bdbdbd;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  /* 1rem = 10px */
+  font-size: 10px;
+  /* line-height: 1.6rem; */
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Responsive */
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+/* Tmp */
+.grid-column-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 16.6667%;
+}
+
+.grid-column-10 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.3334%;
+}
+.grid-column-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+}
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    oopacity: 1;
+  }
+}
+
+@keyframes headerNotifyGrowth {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  animation: fadeIn ease-in 0.5s;
+}
+
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+  background-color: var(--white-color);
+  margin: auto;
+  z-index: 1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* button style */
+.btn {
+  width: 142px;
+  height: 34px;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  display: inline flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+.btn.btn-normal:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.btn.btn--primary {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+/* selection style */
+.select-input {
+  display: flex;
+  width: 200px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  align-items: center;
+  justify-content: space-between;
+}
