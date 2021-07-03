@@ -999,3 +999,103 @@ i.home-product-item__like-icon-fill {
   font-size: 1.2rem;
   line-height: 1.2rem;
 }
+
+.pagination {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin: 45px 0;
+}
+.pagination-item {
+  margin: 0 15px;
+}
+.pagination-item__link {
+  display: flex;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #9a9a9a;
+  width: 40px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+.pagination-item__link--selected {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.pagination-item__link.pagination-item__link--selected:hover {
+  background-color: #ed5c3f;
+}
+.pagination-item__icon {
+  font-weight: 400;
+}
+/* footer */
+.footer {
+  border-top: 4px solid var(--primary-color);
+  padding-top: 25px;
+}
+.footer__heading {
+  font-size: 1.4rem;
+  color: #232323;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer__list {
+  padding-left: 0;
+  list-style: none;
+}
+.footer__list-item {
+}
+.footer__item-link {
+  display: block;
+  text-decoration: none;
+  color: #737373;
+  font-size: 1.4rem;
+  padding: 5px 0;
+}
+.footer__item-link:hover {
+  color: var(--primary-color);
+}
+.footer__item-icon {
+  color: #4a4a4a;
+  margin-right: 5px;
+}
+.footer__download {
+  display: flex;
+  cursor: pointer;
+}
+.footer__download-qr {
+  width: 80px;
+  object-fit: contain;
+  border: 1px solid #e4e4e4;
+}
+.footer__download-app {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__download-appstore {
+  height: 20px;
+  margin-bottom: 10px;
+  width: 80px;
+}
+.footer__download-chplay {
+  height: 17px;
+  width: 80px;
+}
+.footer__bottom {
+  background-color: #f5f5f5;
+}
+.footer__bottom p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+.footer__bottom .author {
+  font-weight: 600;
+}
