@@ -857,6 +857,7 @@
   transition: top linear 0.1s;
   top: 0;
   cursor: pointer;
+  padding-bottom: 10px;
 }
 .home-product-item:hover {
   top: -4px;
