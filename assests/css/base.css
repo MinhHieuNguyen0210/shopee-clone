@@ -21,15 +21,6 @@ body {
   padding: 0;
 }
 /* Responsive */
-.grid {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.grid__full-width {
-  width: 100%;
-}
 
 .grid-row {
   display: flex;
@@ -81,8 +72,19 @@ body {
   left: 0;
   display: flex;
   animation: fadeIn ease-in 0.5s;
+  display: none;
+  z-index: 1;
 }
-
+.onClick:hover .modal {
+  display: block;
+  cursor: pointer;
+}
+.onClick-login:hover .modal {
+  display: block;
+}
+.onClick-login:hover .login__form {
+  display: block;
+}
 .modal__overlay {
   position: absolute;
   width: 100%;
@@ -92,10 +94,11 @@ body {
 
 .modal__body {
   background-color: var(--white-color);
-  margin: auto;
+  margin: 200px 700px;
   z-index: 1;
   border-radius: 4px;
   overflow: hidden;
+  position: relative;
 }
 
 /* button style */

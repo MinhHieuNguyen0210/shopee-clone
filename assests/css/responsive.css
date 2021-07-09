@@ -1,0 +1,148 @@
+/* Mobile & Tablet */
+@media screen and (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+
+  .header__cart-list {
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    right: 0;
+  }
+  .header__cart-list-item {
+    width: 100%;
+    padding-right: 10px;
+  }
+  .header__cart-item-info {
+    width: 100%;
+  }
+  .header__cart-list:before {
+    display: none;
+  }
+  .app__container {
+    padding-top: 104px;
+  }
+  .home-product-item {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+  .header__cart {
+    width: 70px;
+    text-align: right;
+  }
+  .app__container {
+    padding-top: 112px;
+  }
+  .header__search {
+    margin-left: 10px;
+  }
+  .header {
+    height: 80px;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+  .app__container {
+    padding-top: 104px;
+  }
+  .header {
+    height: 60px;
+    padding-top: 11px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .header__with-search {
+    justify-content: space-between;
+  }
+  .header__mobile-search {
+    padding-left: 10px;
+    flex: 1;
+    font-weight: 400;
+  }
+  .header__logo {
+    flex: 1;
+    line-height: 0;
+  }
+  .header__cart {
+    flex: 1;
+    text-align: right;
+  }
+  .header__search {
+    position: fixed;
+    top: 79px;
+    width: 100%;
+    z-index: 1;
+    height: 46px;
+    display: none;
+    animation: mobileSearchSideIn ease-in 0.5s;
+  }
+  .header__search-wrap {
+    line-height: 48px;
+  }
+  .header__search-history {
+    width: 100%;
+    top: calc(100% + 1px);
+  }
+  .header__search-heading {
+    margin: 0 12px;
+  }
+  .header__search-option {
+    top: 23px;
+    right: -4px;
+  }
+  .pagination-item {
+    margin: 0 -1px;
+  }
+  .footer {
+    padding-top: 0;
+  }
+  .row {
+    margin: 0 5px;
+  }
+  .header__logo-img {
+    width: 110px;
+  }
+  .header__sort-bar {
+    top: 62px;
+  }
+  .app__container {
+    padding-top: 87px;
+  }
+  .footer__heading {
+    text-align: center;
+  }
+  .footer__list-item {
+    text-align: center;
+  }
+  .footer__download {
+    justify-content: center;
+  }
+
+  @keyframes mobileSearchSideIn {
+    from {
+      opacity: 0;
+      top: 50px;
+    }
+    to {
+      opacity: 1;
+      top: 79px;
+    }
+  }
+}
