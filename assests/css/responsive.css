@@ -6,7 +6,7 @@
 
   .header__cart-list {
     position: fixed;
-    top: 80px;
+    top: 60px;
     width: 100%;
     right: 0;
   }
@@ -51,6 +51,12 @@
     z-index: 1;
     width: 100%;
   }
+  .header__cart-list {
+    top: 80px;
+  }
+  .mobile-category-list {
+    margin-top: 0;
+  }
 }
 
 /* Mobile */
@@ -86,7 +92,7 @@
   }
   .header__search {
     position: fixed;
-    top: 79px;
+    top: 61px;
     width: 100%;
     z-index: 1;
     height: 46px;
@@ -142,7 +148,7 @@
     }
     to {
       opacity: 1;
-      top: 79px;
+      top: 61px;
     }
   }
 }
